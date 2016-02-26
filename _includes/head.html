@@ -3,6 +3,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
+    {% if page.title == 'Home' %}
+    <title>{{site.name}}</title>
+    {% else %}
+    <title>{{ page.section-title }} {{ page.title }}: {{site.name}}</title>
+    {% endif %}
+    
     
     <title>{{ page.section-title }} {{ page.title }}: {{site.name}}</title>
     <link rel="shortcut icon" href="img/favicon.png">
