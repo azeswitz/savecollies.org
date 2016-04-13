@@ -1,0 +1,17 @@
+# all robots can visit every directory except the three mentioned.
+User-agent: *
+#remove the following on production
+Disallow /
+Disallow: /_db_backups/
+Disallow: /cgi/
+Disallow: /crimson/
+Disallow: /logs/
+Disallow: /php_uploads/
+Disallow: /scripts/
+Disallow: /stats/
+Disallow: /statshistory/
+Disallow: /test/
+Disallow: /calendar/
+Disallow: /calconfirm.html
+Disallow: /confirm.html
+Disallow: /404.html

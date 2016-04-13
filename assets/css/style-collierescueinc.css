@@ -3086,6 +3086,7 @@ textarea.form-control:focus {
 }
 .panel-title {
   padding: 7px;
+    font-size: 18px;
 }
 .panel-group .panel {
   border-radius: 0;

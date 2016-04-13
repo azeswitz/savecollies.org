@@ -1,0 +1,368 @@
+---
+title: Adoption Questionnaire
+layout: default
+---
+
+<div>Please remember that adopting an animal is a SERIOUS commitment.  Animals may take several weeks to months to settle into their new environment.  They cost money and require lots of attention and love.  Please seriously consider your decision to adopt. We highly suggest that you research what is best for you and plan to participate in a training course, so that the adoption experience is a positive and lasting one for you and your new animal companion. <p>It is Collie Rescue, Inc.'s responsibility to place the animals that we rescue into an environment compatible with their needs, and to ensure that their adoption is in the best interest of both the adopter and the animal.  As such, please answer all questions carefully and completely.  A volunteer will contact you within 4 business days of receiving your submission.  Thank You!</p></div>
+
+	<form ACTION="scripts/QuestionnaireController.php" name="frmAQ" METHOD="POST">
+	<input type="hidden" name="recipient" value="info@savecollies.org">
+	<input type="hidden" name="redirect" value="https://www.savecollies.org/confirm.html">
+	<input type="hidden" name="errorPage" value="https://www.savecollies.org/error.php">
+	<input type="hidden" name="subject" value="Adoption Questionnaire">
+	<input type="hidden" name="email">
+	<input type="hidden" name="realname">
+	<input type="hidden" name="required" value="FirstName,LastName,Address,City,State,Zip,Email,HomePhone,Residence,Ownership,Yard,Name1,Age1,DailySchedule,Gender,PreferredTraits,ConcerningBehaviors,PreviousPets,Vet,Reference1,Referral,Certify">
+	<!-- TEST - SUBSET OF FIELDS <input type="hidden" name="required" value="FirstName,State,IntentForPet,Residence,Ownership,DailySchedule,Gender,Certify"> -->
+		<div id="ErrorDescription"></div>
+		<table>
+		  <!--DWLayoutTable-->
+			<tr>
+				<td  valign="top" class="inputLabel"><span class="isRequired">*</span>First Name:</td>
+				<td><input name="FirstName" id="FirstName" class="longInput" type="text" value="" /></td>
+			</tr>
+			<tr>
+				<td  class="inputLabel"><span class="isRequired">*</span>Last Name:</td>
+				<td><input name="LastName" id="LastName" class="longInput" type="text" value="" /></td>
+			</tr>
+			<tr>
+				<td  class="inputLabel"><span class="isRequired">*</span>Address:</td>
+				<td><input name="Address" id="Address" class="longInput" type="text" value="" /></td>
+			</tr>
+			<tr>
+				<td  class="inputLabel"><span class="isRequired">*</span>City:</td>
+				<td><input name="City" id="City" class="longInput" type="text" value="" /></td>
+			</tr>
+			<tr>
+				<td  class="inputLabel"><span class="isRequired">*</span>State:</td>
+				<td>
+					<select name="State" id="State">
+						<option value="" selected>Select</option>
+						<option value="AK">Alaska</option>
+						<option value="AL">Alabama</option>
+						<option value="AZ">Arizona</option>
+						<option value="AR">Arkansas</option>
+						<option value="CA">California</option>
+						<option value="CO">Colorado</option>
+						<option value="CT">Connecticut</option>
+						<option value="DE">Delaware</option>
+						<option value="FL">Florida</option>
+						<option value="GA">Georgia</option>
+						<option value="HI">Hawaii</option>
+						<option value="ID">Idaho</option>
+						<option value="IL">Illinois</option>
+						<option value="IN">Indiana</option>
+						<option value="IA">Iowa</option>
+						<option value="KS">Kansas</option>
+						<option value="KY">Kentucky</option>
+						<option value="LA">Louisiana</option>
+						<option value="ME">Maine</option>
+						<option value="MD">Maryland</option>
+						<option value="MA">Massachusetts</option>
+						<option value="MI">Michigan</option>
+						<option value="MN">Minnesota</option>
+						<option value="MS">Mississippi</option>
+						<option value="MO">Missouri</option>
+						<option value="MT">Montana</option>
+						<option value="NE">Nebraska</option>
+						<option value="NV">Nevada</option>
+						<option value="NH">New Hampshire</option>
+						<option value="NJ">New Jersey</option>
+						<option value="NM">New Mexico</option>
+						<option value="NY">New York</option>
+						<option value="NC">North Carolina</option>
+						<option value="ND">North Dakota</option>
+						<option value="OH">Ohio</option>
+						<option value="OK">Oklahoma</option>
+						<option value="OR">Oregon</option>
+						<option value="PA">Pennsylvania</option>
+						<option value="RI">Rhode Island</option>
+						<option value="SC">South Carolina</option>
+						<option value="SD">South Dakota</option>
+						<option value="TN">Tennessee</option>
+						<option value="TX">Texas</option>
+						<option value="UT">Utah</option>
+						<option value="VT">Vermont</option>
+						<option value="VA">Virginia</option>
+						<option value="WA">Washington</option>
+						<option value="WV">West Virginia</option>
+						<option value="WI">Wisconsin</option>
+						<option value="WY">Wyoming</option>
+						<option value="DC">Washington DC</option>
+						<option value="GU">Guam</option>
+						<option value="PR">Puerto Rico</option>
+						<option value="VI">Virgin Islands</option>
+					</select>
+
+				</td>
+			</tr>
+			<tr>
+				<td  class="inputLabel"><span class="isRequired">*</span>Zip:</td>
+				<td><input name="Zip" id="Zip" class="longInput" type="text" value="" /></td>
+			</tr>
+			<tr>
+				<td  class="inputLabel"><span class="isRequired">*</span>E-mail:</td>
+				<td><input name="Email" id="Email" class="longInput" type="text" value="" /></td>
+			</tr>
+			<tr>
+				<td  class="inputLabel"><span class="isRequired">*</span>Home Phone:</td>
+				<td><input name="HomePhone" id="HomePhone" class="longInput" type="text" value="" /></td>
+			</tr>
+			<tr>
+				<td  class="inputLabel">Cell Phone:</td>
+				<td><input name="CellPhone" id="CellPhone" class="longInput" type="text" value="" /></td>
+			</tr>
+			<tr>
+				<td  class="inputLabel">Work Phone:</td>
+				<td><input name="WorkPhone" id="WorkPhone" class="longInput" type="text" value="" /></td>
+			</tr>
+			<tr>
+				<td  class="inputLabel">Employer:</td>
+				<td><input name="Employer" id="Employer" class="longInput" type="text" value="" /></td>
+			</tr>
+		</table>
+		<br>
+		<table border="0" cellpadding="4" cellspacing="4" width="600">
+			<tr>
+				<td class="inputLabel bigTableLabel" >Name of Dog(s) of Interest:
+				<div>(if applicable) </div></td>
+				<td><input name="AnimalInterest" id="AnimalInterest" class="longInput" type="text" value="" /></td>
+			</tr>
+			<tr valign="top">
+				<td class="inputLabel bigTableLabel" ><span class="isRequired">*</span>
+					What role would you like your new collie to play in your life?
+					<div>(select as many as apply)</div>
+				</td>
+				<td>
+					<div><input type="checkbox" id="IntentForPet" name="IntentForPet[]" value="CompanionForSelf">Companion for Self</div>
+					<div><input type="checkbox" id="IntentForPet" name="IntentForPet[]" value="CompanionForChild">Companion for Child</div>
+					<div><input type="checkbox" id="IntentForPet" name="IntentForPet[]" value="CompanionForPet">Companion for Pet</div>
+					<div><input type="checkbox" id="IntentForPet" name="IntentForPet[]" value="ObedienceAgilityHerding">Obedience/Agility/Herding</div>
+					<div><input type="checkbox" id="IntentForPet" name="IntentForPet[]" value="Therapy">Therapy</div>
+					<div><input type="checkbox" id="IntentForPet" name="IntentForPet[]" value="FarmDog">Farm Dog</div>
+					<div><input type="checkbox" id="IntentForPet" name="IntentForPet[]" value="Other">Other</div>
+				</td>
+			</tr>
+			<tr valign="top">
+				<td class="inputLabel bigTableLabel" >If "Other", please describe:</div>
+				</td>
+				<td>
+					<input name="IntentForPetOther" id="IntentForPetOther" class="longInput" type="text" value="" />
+				</td>
+			</tr>
+			<tr>
+				<td  class="inputLabel bigTableLabel"><span class="isRequired">*</span>Select Your Residence:</td>
+				<td><select name="Residence" id="Residence"><option selected>Please Select</option>
+					<option value="House">House</option>
+					<option value="Townhouse">Townhouse</option>
+					<option value="Condominium">Condominium</option>
+					<option value="Apartment">Apartment</option>
+					</select>
+
+					&nbsp;&nbsp;<span class="isRequired">*</span><input name="Ownership" type="radio" value="Own" />Own&nbsp;&nbsp;
+					<input name="Ownership" id="Ownership" type="radio" value="Rent" />Rent
+				</td>
+			</tr>
+
+			<tr>
+				<td  class="inputLabel bigTableLabel"><span class="isRequired">*</span>Describe Your Yard:</td>
+				<td><select name="Yard" id="Yard"><option selected>Please Select</option>
+					<option value="NoYard">No Yard</option>
+					<option value="Fenced">Fenced</option>
+					<option value="NotFenced">Not Fenced</option>
+					<option value="ElectricFence">Electric Fence</option>
+					</select>
+				</td>
+			</tr>
+
+			<tr>
+				<td  class="inputLabel bigTableLabel">Landlord's Name/Phone:
+				<div>(if applicable) </div></td>
+				<td><input name="Landlord" id="Landlord" class="longInput" type="text" value="" /></td>
+			</tr>
+
+			<tr valign="top">
+				<td class="inputLabel bigTableLabel"><br/>Please List All People Living in Your Home:<br/>(including yourself)</td>
+				<td>
+					<table>
+						<tr>
+							<th>Name</th>
+							<th>Relationship To You</th>
+							<th>Age</th>
+						</tr>
+						<tr>
+							<td><span class="isRequired">*</span><input type="text" name="Name1" value=""/></td>
+							<td><input type="text" name="Relation1" value="Self" readonly/></td>
+							<td><span class="isRequired">*</span><input type="text" name="Age1" value=""/></td>
+						</tr>
+						<tr>
+							<td><input type="text" name="Name2" value=""/></td>
+							<td><input type="text" name="Relation2" value=""/></td>
+							<td><input type="text" name="Age2" value=""/></td>
+						</tr>
+						<tr>
+							<td><input type="text" name="Name3" value=""/></td>
+							<td><input type="text" name="Relation3" value=""/></td>
+							<td><input type="text" name="Age3" value=""/></td>
+						</tr>
+						<tr>
+							<td><input type="text" name="Name4" value=""/></td>
+							<td><input type="text" name="Relation4" value=""/></td>
+							<td><input type="text" name="Age4" value=""/></td>
+						</tr>
+						<tr>
+							<td><input type="text" name="Name5" value=""/></td>
+							<td><input type="text" name="Relation5" value=""/></td>
+							<td><input type="text" name="Age5" value=""/></td>
+						</tr>
+						<tr>
+							<td><input type="text" name="Name6" value=""/></td>
+							<td><input type="text" name="Relation6" value=""/></td>
+							<td><input type="text" name="Age6" value=""/></td>
+						</tr>
+						<tr>
+							<td><input type="text" name="Name7" value=""/></td>
+							<td><input type="text" name="Relation7" value=""/></td>
+							<td><input type="text" name="Age7" value=""/></td>
+						</tr>
+						<tr>
+							<td><input type="text" name="Name8" value=""/></td>
+							<td><input type="text" name="Relation8" value=""/></td>
+							<td><input type="text" name="Age8" value=""/></td>
+						</tr>
+					</table>
+
+				</td>
+			</tr>
+
+			<tr valign="top">
+				<td  class="inputLabel bigTableLabel" ><span class="isRequired">*</span>Describe Your Daily Schedule:</td>
+				<td><textarea rows="5" cols="70" wrap="virtual" name="DailySchedule" id="DailySchedule"></textarea></td>
+			</tr>
+
+			<tr>
+			<td class="inputLabel bigTableLabel"><span class="isRequired">*</span>Do You Prefer:
+			</td>
+					<td>
+				<input name="Gender" id="Gender" type="radio" value="Male" />Male &nbsp;&nbsp;
+				<input name="Gender" id="Gender" type="radio" value="Female" />Female&nbsp;&nbsp;
+				<input name="Gender" id="Gender" type="radio" value="NoPref" />No Preference
+			</td>
+			</tr>
+
+			<tr valign="top">
+				<td  class="inputLabel bigTableLabel"><span class="isRequired">*</span>Traits You Prefer: <div>(Energy Level/Training/etc.)</div></td>
+				<td><textarea rows="5" cols="70" wrap="virtual" name="PreferredTraits" id="PreferredTraits"></textarea></td>
+			</tr>
+			</tr>
+
+			<tr valign="top">
+				<td class="inputLabel bigTableLabel"><span class="isRequired">*</span>Behaviors That Will Concern You:</td>
+				<td><textarea rows="5" cols="70" wrap="virtual" name="ConcerningBehaviors" id="ConcerningBehaviors"></textarea></td>
+			</tr>
+
+					<tr valign="top">
+				<td class="inputLabel bigTableLabel">Please List All Animals Living in Your Home:</td>
+				<td>
+					<table>
+						<tr>
+							<th>Name</th>
+							<th>Breed</th>
+							<th>Age</th>
+							<th>Gender</th>
+						</tr>
+						<tr>
+							<td><input type="text" name="AnimalName1" value=""/></td>
+							<td><input type="text" name="AnimalBreed1" value=""/></td>
+							<td><input type="text" name="AnimalAge1" value=""/></td>
+							<td><input type="text" name="GenderAnimal1" value=""/></td>
+						</tr>
+						<tr>
+							<td><input type="text" name="AnimalName2" value=""/></td>
+							<td><input type="text" name="AnimalBreed2" value=""/></td>
+							<td><input type="text" name="AnimalAge2" value=""/></td>
+							<td><input type="text" name="GenderAnimal2" value=""/></td>
+						</tr>
+						<tr>
+							<td><input type="text" name="AnimalName3" value=""/></td>
+							<td><input type="text" name="AnimalBreed3" value=""/></td>
+							<td><input type="text" name="AnimalAge3" value=""/></td>
+							<td><input type="text" name="GenderAnimal3" value=""/></td>
+						</tr>
+						<tr>
+							<td><input type="text" name="AnimalName4" value=""/></td>
+							<td><input type="text" name="AnimalBreed4" value=""/></td>
+							<td><input type="text" name="AnimalAge4" value=""/></td>
+							<td><input type="text" name="GenderAnimal4" value=""/></td>
+						</tr>
+						<tr>
+							<td><input type="text" name="AnimalName5" value=""/></td>
+							<td><input type="text" name="AnimalBreed5" value=""/></td>
+							<td><input type="text" name="AnimalAge5" value=""/></td>
+							<td><input type="text" name="GenderAnimal5" value=""/></td>
+						</tr>
+						<tr>
+							<td><input type="text" name="AnimalName6" value=""/></td>
+							<td><input type="text" name="AnimalBreed6" value=""/></td>
+							<td><input type="text" name="AnimalAge6" value=""/></td>
+							<td><input type="text" name="GenderAnimal6" value=""/></td>
+						</tr>
+					</table>
+
+				</td>
+			</tr>
+			<tr valign="top">
+				<td  class="inputLabel bigTableLabel"><span class="isRequired">*</span>Have You Had Pets Before?  <div>Please tell us what you've had and where they are now:</div>
+				</td>
+				<td><textarea rows="5" cols="70" wrap="virtual" name="PreviousPets" id="PreviousPets"></textarea></td>
+			</tr>
+
+			<tr>
+				<td  class="inputLabel bigTableLabel"><span class="isRequired">*</span>Name & Phone of Veterinarian
+				<div>you currently use, used previously, or plan to use:</div><br/>
+				</td>
+				<td><input name="Vet" id="Vet" class="longInput" type="text" value="" /></td>
+			</tr>
+
+			<tr valign="top">
+				<td  class="inputLabel bigTableLabel">Please list two references that we may contact
+				<div>about your animal care experience and dedication:</div><br/>
+				</td>
+				<td><span class="isRequired">*</span>1.&nbsp;&nbsp;<input name="Reference1" id="Reference1" class="longInput" type="text" value="" />
+				<br/>&nbsp;&nbsp;2.&nbsp;&nbsp;<input name="Reference2" id="Reference2" class="longInput" type="text" value="" /></td>
+			</tr>
+
+			<tr valign="top">
+				<td  class="inputLabel bigTableLabel">Additional Info that will help us find the right pet for you:</td>
+				<td><textarea rows="5" cols="70" wrap="virtual" name="AdditionalInfo"></textarea></td>
+			</tr>
+
+			<tr>
+				<td  class="inputLabel bigTableLabel"><span class="isRequired">*</span>How did you find out about us?:
+				</td>
+				<td><input name="Referral" id="Referral" class="longInput" type="text" value="" /></td>
+			</tr>
+
+			<tr valign="top">
+				<td align="right"></td>
+				<td>
+				<span class="isRequired">*</span><input name="Certify" id="Certify" type="checkbox" value="1" />I certify:
+				<ul>
+					<li>I have read the <a href="GuideLines.html" target="_new">Adoption Guidelines</a>.</li>
+					<li>The information that I provided in this questionnaire is correct to the best of my knowledge.</li>
+					<li>All members of my household have never been charged with cruelty to animals.</li>
+				</ul>
+
+				</td>
+			</tr>
+			<div style="display:none;">Please leave this field empty:<input type="text" value="" id="robotest" name="robotest"/>
+			</div>
+			<tr>
+				<td></td>
+				<td><input type="button" onClick="doSubmit();" name="1Submit" id="1submit" value="Submit App">&nbsp;&nbsp;&nbsp;<input type="reset" value="reset"></td>
+			</tr>
+
+		</table>
+		<br/><br/>
+	</form>
+</div>
