@@ -6,27 +6,22 @@
     <div id="preloader">
         <div id="status">&nbsp;</div>
     </div>
-    <body>
-       {% include google_analytics.html %}
-        <style>
-        .header-img{
-            position: absolute;
-            z-index: 1001 !important;
-        }
-        </style>
+    <body class="boxed">
 
-        <div id="sb-site">
-        <!-- <div class="boxed">  -->
+        <!--Pre-Loader-->
+        <div id="preloader"></div>
+       {% include google_analytics.html %}
+
 
         {% include header.html %}
         {% include main-nav.html %}
-        <div class="container">
+        <div class="content-wrap">
             {{ content }} 
         </div>
 
         {% include footer.html %}
-       <!-- </div>  boxed -->
-        </div> <!-- sb-site -->
+        <div id="image-cache" class="hidden"></div>
+
         <div id="back-top">
             <a href="#header"><i class="fa fa-chevron-up"></i></a>
         </div>
