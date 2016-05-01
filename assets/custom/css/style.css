@@ -2,7 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Dosis:300,400,500,700);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 /*------------------------------------------------------------------
-[Color Scheme / Colors, textures]
+[Color Scheme / Colors, textures] ARZ
 */
 .e-bg-light-texture {
   background: url("../images/backgrounds/dark_fish_skin.png"); }
@@ -89,7 +89,7 @@
   color: #e74c3c !important; }
 
 /*------------------------------------------------------------------
-[Typography]
+[Typography] ARZ
 */
 /* Headings Fonts variables */
 /* Heading font one */
@@ -188,7 +188,7 @@ h4 a, h5 a, h6 a {
   font-size: 48px; }
 
 /*------------------------------------------------------------------
-[Buttons]
+[Buttons] ARZ
 */
 .btn-lg {
   font-size: 15px; }
@@ -329,7 +329,7 @@ h4 a, h5 a, h6 a {
     color: #f2f2f2 !important; }
 
 /*------------------------------------------------------------------
-[4. Basic Styles]
+[4. Basic Styles] ARZ
 */
 body {
   display: block;
@@ -613,7 +613,7 @@ button, input, select, textarea {
   outline: 0; }
 
 /*------------------------------------------------------------------
-[13. Media Query]
+[13. Media Query] ARZ
 */
 @media (max-width: 1200px) {
   .boxed .content-wrap {
@@ -757,22 +757,10 @@ button, input, select, textarea {
     color: #a7a7a7; }
     #top-navigation .ident .vc-photo {
       min-height: 360px;
-      background: url("../images/cri_logo.png");
+      background: url("../images/cri_logo-2.png");
       background-position: center center;
       background-repeat: no-repeat;
-      background-size: cover;
-      -webkit-filter: grayscale(100%);
-      -moz-filter: grayscale(100%);
-      -ms-filter: grayscale(100%);
-      -o-filter: grayscale(100%);
-      filter: grayscale(100%);
-      filter: url(../images/grayscale.svg#greyscale);
-      /* Firefox 4+ */
-      filter: gray;
-      /* IE 6-9 */
-      -moz-transition: all .5s ease-in-out;
-      -webkit-transition: all .5s ease-in-out;
-      transition: all .5s ease-in-out; }
+      background-size: cover; }
       #top-navigation .ident .vc-photo a {
         width: 100%;
         height: 100%; }

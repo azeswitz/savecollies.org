@@ -1,10 +1,9 @@
-// Fonts ARZ
+// Fonts
 
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,300,400italic,500,700);
 @import url(https://fonts.googleapis.com/css?family=Dosis:300,400,500,700);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
-//BULLSHIT
 // Colors
 @import "colors.scss";
 
@@ -36,32 +35,13 @@
     color: $color04;
     .vc-photo {
       min-height: 360px;
-      background: url("../images/cri_logo.png");
+      background: url("../images/cri_logo-2.png");
       background-position: center center;
       background-repeat: no-repeat;
       background-size: cover;
-
-      -webkit-filter: grayscale(100%);
-      -moz-filter: grayscale(100%);
-      -ms-filter: grayscale(100%);
-      -o-filter: grayscale(100%);
-      filter: grayscale(100%);
-      filter: url(../images/grayscale.svg#greyscale); /* Firefox 4+ */
-      filter: gray; /* IE 6-9 */;
-      -moz-transition: all .5s ease-in-out;
-      -webkit-transition: all .5s ease-in-out;
-      transition: all .5s ease-in-out;
-
       a {
         width: 100%;  height: 100%;
       }
-    }
-    &:hover .vc-photo {
-      -webkit-filter: grayscale(0%);
-      -moz-filter: grayscale(0%);
-      -ms-filter: grayscale(0%);
-      -o-filter: grayscale(0%);
-      filter: none;
     }
     .vc-name {
       .name {
