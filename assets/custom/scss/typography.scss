@@ -6,6 +6,7 @@
 $font-accident-one:               'Montserrat', sans-serif;
 $font-accident-two:               'Dosis', sans-serif;
 $font-regular:                    'Raleway', sans-serif;
+$font-collie-rescue:              'Merriweather';
 
 /* Heading font one */
 .font-accident-one-bold           {  font-family: $font-accident-one;  font-weight: 700;  font-style: normal;  }
@@ -23,6 +24,13 @@ $font-regular:                    'Raleway', sans-serif;
 .font-regular-normal-italic       {  font-family: $font-regular;  font-weight: 400;  font-style: oblique;  }
 .font-regular-medium              {  font-family: $font-regular;  font-weight: 500;  font-style: normal;  }
 .font-regular-bold                {  font-family: $font-regular;  font-weight: 700;  font-style: normal;  }
+
+/* Collie Rescue font */
+.font-collie-rescue-light               {  font-family: $font-collie-rescue;  font-weight: 300;  font-style: normal;  }
+.font-collie-rescue-normal              {  font-family: $font-collie-rescue;  font-weight: 400;  font-style: normal;  }
+.font-collie-rescue-normal-italic       {  font-family: $font-collie-rescue;  font-weight: 400;  font-style: oblique;  }
+.font-collie-rescue-medium              {  font-family: $font-collie-rescue;  font-weight: 500;  font-style: normal;  }
+.font-collie-rescue-bold                {  font-family: $font-collie-rescue;  font-weight: 700;  font-style: normal;  }
 
 /* Headings */
 h1 {}
